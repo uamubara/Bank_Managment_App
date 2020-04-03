@@ -5,6 +5,7 @@ using namespace std;
 string name; // global variable
 
 void WithDraw();
+void Deposit();
 
 int main() {
 
@@ -36,7 +37,7 @@ int main() {
 
       case 'D':
       case 'd':
-          cout << "Deposit" << endl;
+          Deposit();
           break;
 
       case 'B':
@@ -62,4 +63,9 @@ void WithDraw() {
     cout << "withdrawing" << endl;
     cout << name << ", You have withdrawed from your account!" << endl;
 
+}
+
+void Deposit(){
+    cout << "Depositing into your account" << endl;
+    cout << name << " , You have deposited into your account!" << endl;
 }
